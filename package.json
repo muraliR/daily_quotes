@@ -9,8 +9,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.14.0",
-    "express-handlebars": "^3.3.12",
-    "request": "^3.3.12"
+    "node" : "5.3.0",
+    "npm": "3.3.12",
+    "express": "*",
+    "express-handlebars": "*",
+    "request": "*"
   }
 }

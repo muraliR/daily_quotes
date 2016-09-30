@@ -4,6 +4,7 @@
     <title>Daily Quotes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
     <link rel="stylesheet" type="text/css" href="/css/app.min.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
     <style>
       /* TODO */
     </style>
@@ -11,7 +12,7 @@
 
   <body>
     <div class="app-page" data-page="home">
-      <div class="app-topbar">
+      <div class="app-topbar" style="background-color:#4486f0">
         <div class="app-title">Quote of the day</div>
       </div>
       <div class="app-content">
@@ -25,7 +26,9 @@
     <script type="text/javascript" src="/js/app.min.js"></script>
     <script>
       App.controller('home', function (page) {
-        // put stuff here
+        $(document).delegate('.favorite-quote','click',function(){
+          $(this).removeClass('fa-heart-o').addClass('fa-heart');
+        })
       });
 
       try {
